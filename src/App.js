@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+
 import './App.css';
+import Form from './components/Form/Form';
+import Header from './components/Header/Header';
+import DisplayList from './components/DisplayList';
 
 function App() {
+  const [name, setName] = useState('');
+  const [slogan, setSlogan] = useState('');
+  const getData = (name, slogan) => {
+    setName(name);
+    setSlogan(slogan);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Form getData={getData}/>} />
+        <Route path='/display' element={<DisplayList name={name} slogan={slogan} />} />
+      </Routes> 
+    </BrowserRouter>
   );
 }
 

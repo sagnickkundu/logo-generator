@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+.heading-container {
+    text-align: left;
+    padding: 0px 210px 0px 80px;
+    margin: 60px auto 50px;
+    max-width: 1190px;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-container {
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 30px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+    max-width: 1130px;
+    margin: 10px auto 0px;
+}
+form{
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loading {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image1{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1-text{
+    position: absolute;
+    color: white;
+    letter-spacing: 0.3rem;
+    
+}
+
+.image2{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.image2-text{
+    position: absolute;
+    color: white;
+    letter-spacing: 0.3rem;
+    
+}
+
+.image3{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.image3-text{
+    position: absolute;
+    padding: 50px;
+    color: green;
+    letter-spacing: 0.3rem;
+    
+}
+
+.image4{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.image4-text{
+    position: absolute;
+    padding: 45px;
+    color: white;
+    letter-spacing: 0.3rem;
+    
+}
+
+.image5{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.image5-text{
+    position: absolute;
+    padding: 45px;
+    color: white;
+    letter-spacing: 0.3rem;
+    
+}
+
+.image6{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.image6-text{
+    position: absolute;
+    padding: 25px;
+    color: white;
+    letter-spacing: 0.3rem;
+    
+}
+
+img{
+    width: 100%;
 }
